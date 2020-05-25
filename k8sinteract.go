@@ -11,7 +11,7 @@ import (
 
 func main() {
 	var kubeconfig *string
-	if home := "/home/mkm"; home != "" {
+	if home := "your_kube_config_folder"; home != "" {
 		kubeconfig = flag.String("kubeconfig", filepath.Join(home, ".kube", "config"), "(optional) absolute path to the kubeconfig file")
 	} else {
 		kubeconfig = flag.String("kubeconfig", "", "absolute path to the kubeconfig file")
